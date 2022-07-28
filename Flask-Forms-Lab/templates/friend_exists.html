@@ -5,12 +5,16 @@
 <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='homestyle.css')}}">
 
 </head>
 <body>
-
-
-
+	<h2>sup</h2>
+	<h1> {{n}} </h1>
+	{%if n in friends%}
+	<h1>true</h1>
+	{%else%}
+	<h1>mnnnn</h1>
+	{%endif%}
 </body>
 </html>
